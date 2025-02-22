@@ -5,8 +5,17 @@
 	import HomePage from '$lib/views/HomePage/HomePage.svelte';
 	import ContactPage from '$lib/views/ContactPage/ContactPage.svelte';
 	import { onMount } from 'svelte';
+	import NavBar from '$lib/components/NavBar/NavBar.svelte';
 	let reloader = $state(false);
 
+	const _navBarRoute = (_id: string, _path: string, _name: string, _text: string) => {
+		return {
+			id: _id,
+			path: _path,
+			name: _name,
+			text: _text
+		};
+	};
 	// the first page added will always be the default route
 	const _routes: PageComponent[] = [
 		Page('home', HomePage),
@@ -14,21 +23,16 @@
 		Page('contact-us', ContactPage)
 	];
 
+	const _navBarRoutes = [
+		_navBarRoute('home_id', 'home', 'Home Button', 'Home'),
+		_navBarRoute('about_id', 'about', 'About Button', 'About'),
+		_navBarRoute('contact_us_id', 'contact-us', 'Contact Us Button', 'Contact Us')
+	];
+
 	onMount(() => {});
 </script>
 
-<button
-	onclick={() => {
-		controllers.RouteTo('home');
-	}}
->
-	home
-</button>
-<button
-	onclick={() => {
-		controllers.RouteTo('about');
-	}}
->
-	about
-</button>
-<Router routes={_routes} />
+<div class="page">
+	<NavBar routes={_navBarRoutes} />
+	<Router routes={_routes} />
+</div>

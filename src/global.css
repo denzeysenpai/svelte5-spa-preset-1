@@ -1,0 +1,13 @@
+:root {
+    --black: #25292a;
+    --orange: #e17055;
+    --yellow: #fdcb6e;
+    --gray: #dfe6e9;
+    --off-white: #f5f4eb;
+    --gutter: 4rem;
+    --subtle-delay: all 0.2s ease;
+}
+
+p {
+    font-family: 'Albert Sans';
+}

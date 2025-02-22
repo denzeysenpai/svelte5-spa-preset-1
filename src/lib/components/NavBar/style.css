@@ -1,0 +1,50 @@
+@import "../../../global.css";
+
+:root {
+    --anchor-margin: 15px;
+}
+
+.web-header {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: fit-content;
+    background-color: var(--black);
+    font-family: 'Albert Sans';
+    z-index: 10;
+    .logo-container {
+        margin: auto;
+        margin-left: var(--gutter);
+        height: fit-content;
+        display: flex;
+        #logo {
+            color: var(--off-white);
+            margin: auto;
+
+        }
+    }
+    .anchor-container {
+        margin-right: calc(var(--gutter) - var(--anchor-margin));
+        height: fit-content;
+        .anchor {
+            margin: var(--anchor-margin);
+            font-family: 'Albert Sans';
+            padding: 2px 20px;
+            font-size: 1rem;
+            border: none;
+            background-color: transparent;
+            color: var(--off-white);
+            cursor: pointer;
+            transition: var(--subtle-delay);
+        }
+        .anchor.active,
+        .anchor:hover {
+            color: var(--yellow);
+            transition: var(--subtle-delay);
+        }
+    }
+}
+
