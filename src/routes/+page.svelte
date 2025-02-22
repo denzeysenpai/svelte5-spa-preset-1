@@ -13,7 +13,10 @@
 			id: _id,
 			path: _path,
 			name: _name,
-			text: _text
+			text: _text,
+			handler: () => {
+				controllers.RouteTo(_path);
+			}
 		};
 	};
 	// the first page added will always be the default route
@@ -33,6 +36,7 @@
 </script>
 
 <div class="page">
-	<NavBar routes={_navBarRoutes} />
-	<Router routes={_routes} />
+	<NavBar routes={_navBarRoutes}>
+		<Router routes={_routes} />
+	</NavBar>
 </div>

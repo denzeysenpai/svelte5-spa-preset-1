@@ -26,20 +26,3 @@
 		<controllers.CurrentRoute />
 	</div>
 {/if}
-
-<style>
-	.page-comp {
-		animation-name: fadeIn;
-		animation-duration: 0.5s;
-		margin-top: 60px;
-	}
-
-	@keyframes fadeIn {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	}
-</style>
