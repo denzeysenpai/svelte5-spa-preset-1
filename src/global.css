@@ -11,6 +11,7 @@
     --long-delay: all 1s ease;
     --nav-bar-height: 60px;
     --first-tick-responsive: 700px;
+    --main-font: 'Albert Sans';
 }
 
 html, body {
@@ -18,5 +19,5 @@ html, body {
 }
 
 p {
-    font-family: 'Albert Sans';
+    font-family: var(--main-font);
 }

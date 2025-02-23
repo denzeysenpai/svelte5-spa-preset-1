@@ -1,100 +1,104 @@
-@import "../../../global.css";
+@import '../../../global.css';
+
+:root {
+	--tag-size: 0.6rem;
+}
 
 .page-footer {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--main-dark-color);
-    padding: 30px;
-    padding-left: var(--gutter);
-    padding-right: var(--gutter);
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--main-dark-color);
+	padding: 30px;
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
 
-    #tag {
-        color: var(--yellow);
-        font-size: 0.6rem;
-        line-height: 0.6rem;
-        margin: 4px auto 20px 0px;
-        width: fit-content;
-        opacity: 0.5;
-    }
+	#tag {
+		color: var(--yellow);
+		font-size: var(--tag-size);
+		line-height: var(--tag-size);
+		margin: 4px auto 20px 0px;
+		width: fit-content;
+		opacity: 0.5;
+	}
 
-    .box-container {
-        display: flex;
-        flex-direction: row;
-        width: calc(100% - (var(--gutter) * 2));
-        border-top: 2px solid var(--yellow);
-        border-bottom: 2px solid var(--yellow);
-        padding-top: 20px;
-        padding-bottom: 20px;
-        opacity: 0.6;
+	.box-container {
+		display: flex;
+		flex-direction: row;
+		width: calc(100% - (var(--gutter) * 2));
+		border-top: 2px solid var(--yellow);
+		border-bottom: 2px solid var(--yellow);
+		padding-top: 20px;
+		padding-bottom: 20px;
+		opacity: 0.6;
 
-        .box {
-            color: var(--yellow);
-            position: relative;
-            width: fit-content;
-            margin: 0px 50px 0px 0px;
-            min-width: 300px;
-            display: flex;
-            flex-direction: column;
+		.box {
+			color: var(--yellow);
+			position: relative;
+			width: fit-content;
+			margin: 0px 50px 0px 0px;
+			min-width: 300px;
+			display: flex;
+			flex-direction: column;
 
-            h3 {
-                    font-family: 'Albert Sans';
-                    font-size: 2rem;
-                    margin-top: 0;
-            }
+			h3 {
+				font-family: var(--main-font);
+				font-size: 2rem;
+				margin-top: 0;
+			}
 
-            .highlight {
-                font-size: 2.6rem;
-                max-width: 600px;
-            }
+			.highlight {
+				font-size: 2.6rem;
+				max-width: 600px;
+			}
 
-            .upper-box {
-                font-size: 2rem;
-                font-family: 'Albert Sans';
+			.upper-box {
+				font-size: 2rem;
+				font-family: var(--main-font);
 
-                .logo-sect {
-                    p {
-                        font-size: 1rem;
-                        line-height: 0.6rem;
-                        margin: 0;
-                        height: fit-content;
-                        padding: 6px;
-                        background-color: var(--yellow);
-                        color: var(--main-dark-color);
-                        width: fit-content;
-                    }
-                }
+				.logo-sect {
+					p {
+						font-size: 1rem;
+						line-height: 0.6rem;
+						margin: 0;
+						height: fit-content;
+						padding: 6px;
+						background-color: var(--yellow);
+						color: var(--main-dark-color);
+						width: fit-content;
+					}
+				}
 
-                .message {
-                    margin-top: 50px;
-                    font-size: 1rem;
-                }
-            }
+				.message {
+					margin-top: 50px;
+					font-size: 1rem;
+				}
+			}
 
-            .contacts-container {
-                margin-top: 50px;
-                p {
-                    font-size: 0.8rem;
-                    line-height: 1rem;
-                    margin: 0;
-                    height: fit-content;
-                }
-            }
+			.contacts-container {
+				margin-top: 50px;
+				p {
+					font-size: 0.8rem;
+					line-height: 1rem;
+					margin: 0;
+					height: fit-content;
+				}
+			}
 
-            .anchor-route {
-                width: fit-content;
-                background-color: transparent;
-                border: none;
-                color: var(--yellow);
-                cursor: pointer;
-                font-family: 'Albert Sans';
-                border-bottom: 1px solid transparent;
-                padding: 2px 1px 2px 1px;
-                transition: var(--subtle-delay);
-            }
-            .anchor-route:hover {
-                border-bottom: 1px solid var(--yellow);
-            }
-        }
-    }
+			.anchor-route {
+				width: fit-content;
+				background-color: transparent;
+				border: none;
+				color: var(--yellow);
+				cursor: pointer;
+				font-family: var(--main-font);
+				border-bottom: 1px solid transparent;
+				padding: 2px 1px 2px 1px;
+				transition: var(--subtle-delay);
+			}
+			.anchor-route:hover {
+				border-bottom: 1px solid var(--yellow);
+			}
+		}
+	}
 }

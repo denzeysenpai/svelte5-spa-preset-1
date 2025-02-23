@@ -2,6 +2,7 @@
 
 :root {
 	--anchor-margin: 15px;
+	--logo-size-reg: 35px;
 }
 
 .page-base {
@@ -14,7 +15,7 @@
 		justify-content: space-between;
 		width: 100vw;
 		background-color: var(--main-dark-color);
-		font-family: 'Albert Sans';
+		font-family: var(--main-font);
 		height: var(--nav-bar-height);
 		z-index: 10;
 		
@@ -34,8 +35,8 @@
 					margin: auto;
 					font-size: 0.5rem;
 					background-color: var(--yellow);
-					height: 35px;
-					width: 35px;
+					height: var(--logo-size-reg);
+					width: var(--logo-size-reg);
 					margin: auto 10px auto 0px;
 					border-radius: 10px;
 				}
@@ -48,7 +49,7 @@
 
 			.anchor {
 				margin: var(--anchor-margin);
-				font-family: 'Albert Sans';
+				font-family: var(--main-font);
 				padding: 6px 20px;
 				font-size: 1rem;
 				background-color: transparent;
@@ -91,12 +92,12 @@
 
 		.mobile-anchor-container {
 			background-color: var(--main-dark-color);
-			height: 100vh;
 			transition: var(--subtle-delay);
 			width: fit-content;
+			position: fixed;
+			height: 100vh;
 			padding: 20px;
 			display: flex;
-			position: fixed;
 			left: 100vw;
 
 			.anchor-container {
@@ -108,7 +109,7 @@
 					width: 240px;
 					padding: 10px;
 					margin: 3px 0px;
-					font-family: 'Albert Sans';
+					font-family: var(--main-font);
 					font-size: 1rem;
 					background-color: transparent;
 					color: var(--off-white);

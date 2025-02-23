@@ -5,6 +5,9 @@
 	--landing-page-height-min: 500px;
 	--landing-page-height-small: 420px;
 	--landing-page-height-long: 820px;
+	--logo-size-reg: 300px;
+	--logo-size-mid: 260px;
+	--logo-size-small: 220px;
 }
 
 .main-page-content {
@@ -26,8 +29,8 @@
 			margin: auto;
 
 			.floating-logo {
-				height: 300px;
-				width: 300px;
+				height: var(--logo-size-reg);
+				width: var(--logo-size-reg);
 				background-color: var(--yellow);
 				border-radius: 20px;
 			}
@@ -40,7 +43,7 @@
 					font-size: 5rem;
 					line-height: 3rem;
 					margin: 5px 0px;
-					font-family: 'Albert Sans';
+					font-family: var(--main-font);
 					color: var(--yellow);
 				}
 
@@ -64,7 +67,7 @@
 					flex-grow: 1;
 					justify-content: center;
 					padding: 15px;
-					font-family: 'Albert Sans';
+					font-family: var(--main-font);
 					font-size: 1rem;
 					font-weight: 800;
 					background-color: transparent;
@@ -146,8 +149,8 @@
 				margin: auto;
 
 				.floating-logo {
-					height: 260px;
-					width: 260px;
+					height: var(--logo-size-mid);
+					width: var(--logo-size-mid);
 					border-radius: 18px;
 				}
 
@@ -157,7 +160,7 @@
 						line-height: 2rem;
 						margin: 5px 0px;
 					}
-					
+
 					p {
 						font-size: 1rem;
 						font-weight: 700;
@@ -200,8 +203,8 @@
 				margin: auto;
 
 				.floating-logo {
-					height: 220px;
-					width: 220px;
+					height: var(--logo-size-small);
+					width: var(--logo-size-small);
 					border-radius: 18px;
 				}
 
@@ -256,8 +259,8 @@
 				transform: scale(0.9);
 
 				.floating-logo {
-					height: 300px;
-					width: 300px;
+					height: var(--logo-size-reg);
+					width:  var(--logo-size-reg);
 					border-radius: 18px;
 				}
 				
