@@ -13,7 +13,7 @@
         flex-direction: row;
         justify-content: space-between;
         width: 100vw;
-        background-color: var(--black);
+        background-color: var(--main-dark-color);
         font-family: 'Albert Sans';
         height: var(--nav-bar-height);
         z-index: 10;
@@ -74,7 +74,7 @@
         }
         
         .mobile-anchor-container {
-            background-color: var(--black);
+            background-color: var(--main-dark-color);
             height: 100vh;
             transition: var(--subtle-delay);
             width: fit-content;
@@ -114,7 +114,7 @@
             padding: 10px;
             border: 3px solid var(--yellow);
             border-radius: 20px;
-            background-color: var(--black);
+            background-color: var(--main-dark-color);
             display: flex;
             flex-direction:column;
             height: 60px;

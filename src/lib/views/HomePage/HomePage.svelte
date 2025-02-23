@@ -1,8 +1,28 @@
 <script lang="ts">
+	import * as Assets from '../../assets/assets.svelte';
+	import './style.css';
+	let businessName = 'Business Name';
+	let businessShortMessage = 'Add your short message here!';
 </script>
 
 <main class="main-page-content">
 	<!-- LANDING PAGE SECTION -->
+	<section class="landing-page">
+		<div class="floating-box-foo">
+			<div class="upper">
+				<h1>{businessName}</h1>
+				<p>{businessShortMessage}</p>
+			</div>
+			<div class="lower">
+				<button id="action-1">Action 1</button>
+				<button id="action-2">Action 2</button>
+			</div>
+		</div>
+		<div class="floating-box-foo">
+			<img src="" alt="logo element here" class="floating-logo" />
+		</div>
+		<img src={Assets.LandingPageBG} alt="" srcset="" class="landing-page-bg" />
+	</section>
 	<!-- LANDING PAGE SECTION -->
 
 	<!-- SUMMARY OF ABOUT US OR INTRODUCTION -->
