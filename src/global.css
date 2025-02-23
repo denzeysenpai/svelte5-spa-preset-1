@@ -5,10 +5,12 @@
     --gray: #dfe6e9;
     --off-white: #f5f4eb;
     --gutter: 4rem;
+    --quick-delay: all 0.12s ease;
     --subtle-delay: all 0.2s ease;
     --normal-delay: all 0.5s ease;
     --long-delay: all 1s ease;
     --nav-bar-height: 60px;
+    --first-tick-responsive: 700px;
 }
 
 p {
