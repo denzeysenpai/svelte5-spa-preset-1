@@ -1,1 +1,65 @@
 @import "../../../global.css";
+
+.page-footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--main-dark-color);
+    padding: 40px;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+    .box-container {
+        display: flex;
+        flex-direction: row;
+        width: calc(100% - (var(--gutter) * 2));
+        .box {
+            color: var(--yellow);
+            position: relative;
+            width: fit-content;
+            margin: 0px 50px 0px 0px;
+            opacity: 0.6;
+            min-width: 300px;
+
+            h3 {
+                    font-family: 'Albert Sans';
+            }
+
+            .highlight {
+                font-size: 3rem;
+                max-width: 600px;
+            }
+            .upper-box {
+                font-size: 2rem;
+                font-family: 'Albert Sans';
+
+                .logo-sect {
+                    p {
+                        font-size: 1rem;
+                        line-height: 0.6rem;
+                        margin: 0;
+                        height: fit-content;
+                        padding: 6px;
+                        background-color: var(--yellow);
+                        color: var(--main-dark-color);
+                        width: fit-content;
+                    }
+                }
+
+                .message {
+                    margin-top: 50px;
+                    font-size: 1rem;
+                }
+            }
+
+            .contacts-container {
+                margin-top: 50px;
+                p {
+                    font-size: 0.8rem;
+                    line-height: 1rem;
+                    margin: 0;
+                    height: fit-content;
+                }
+            }
+        }
+    }
+}

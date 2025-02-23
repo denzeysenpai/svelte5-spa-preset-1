@@ -22,9 +22,20 @@
 			margin-left: var(--gutter);
 			height: fit-content;
 			display: flex;
-			#logo {
-				color: var(--off-white);
-				margin: auto;
+			.logo-sect {
+				color: var(--yellow);
+				display: flex;
+				flex-direction: row-reverse;
+				#logo {
+					color: var(--main-dark-color);
+					margin: auto;
+					font-size: 0.5rem;
+					background-color: var(--yellow);
+					height: 35px;
+					width: 35px;
+					margin: auto 10px auto 0px;
+					border-radius: 10px;
+				}
 			}
 		}
 		.anchor-container {

@@ -63,7 +63,10 @@
 <div class="page-base">
 	<header class="web-header" id="desktop-only">
 		<div class="logo-container">
-			<img id="logo" src="" alt="Business Logo" />
+			<div class="logo-sect">
+				<p>Business Name</p>
+				<img id="logo" src="" alt="Business Logo" />
+			</div>
 		</div>
 		<nav class="anchor-container">
 			{#each routes as route}

@@ -6,6 +6,7 @@
 	import ContactPage from '$lib/views/ContactPage/ContactPage.svelte';
 	import { onMount } from 'svelte';
 	import NavBar from '$lib/components/NavBar/NavBar.svelte';
+	import Footer from '$lib/components/Footer/Footer.svelte';
 	let reloader = $state(false);
 
 	const _navBarRoute = (_id: string, _path: string, _name: string, _text: string) => {
@@ -38,5 +39,6 @@
 <div class="page">
 	<NavBar routes={_navBarRoutes}>
 		<Router routes={_routes} />
+		<Footer routes={_navBarRoutes} />
 	</NavBar>
 </div>
