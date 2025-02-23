@@ -17,6 +17,10 @@
 		};
 	};
 	const controller = initialize();
+	function _mobileNavHandler() {
+		controller.toggle();
+	}
+
 	const anchors = [
 		{
 			mobile: 'home_id_mobile',
@@ -31,9 +35,7 @@
 			desktop: 'about_id'
 		}
 	];
-	function _mobileNavHandler() {
-		controller.toggle();
-	}
+
 	function _setAnchorToActive(id: string) {
 		anchors.forEach((anchor) => {
 			if (id == anchor.desktop || id == anchor.mobile) {
