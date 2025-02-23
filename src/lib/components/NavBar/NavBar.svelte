@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { controllers } from '$lib/routing/routeController.svelte';
+	import { onMount } from 'svelte';
 	import './style.css';
 
 	let { routes, children } = $props();
@@ -16,10 +17,47 @@
 		};
 	};
 	const controller = initialize();
-
+	const anchors = [
+		{
+			mobile: 'home_id_mobile',
+			desktop: 'home_id'
+		},
+		{
+			mobile: 'contact_us_id_mobile',
+			desktop: 'contact_us_id'
+		},
+		{
+			mobile: 'about_id_mobile',
+			desktop: 'about_id'
+		}
+	];
 	function _mobileNavHandler() {
 		controller.toggle();
 	}
+	function _setAnchorToActive(id: string) {
+		anchors.forEach((anchor) => {
+			if (id == anchor.desktop || id == anchor.mobile) {
+				const anch1 = document.querySelector('#' + anchor.desktop);
+				const anch2 = document.querySelector('#' + anchor.mobile);
+
+				if (anch1 && anch2) {
+					if (!anch1.classList.contains('active')) anch1.classList.toggle('active');
+					if (!anch2.classList.contains('active')) anch2.classList.toggle('active');
+				}
+			} else {
+				const anch1 = document.querySelector('#' + anchor.desktop);
+				const anch2 = document.querySelector('#' + anchor.mobile);
+
+				if (anch1 && anch2) {
+					if (anch1.classList.contains('active')) anch1.classList.toggle('active');
+					if (anch2.classList.contains('active')) anch2.classList.toggle('active');
+				}
+			}
+		});
+	}
+	onMount(() => {
+		_setAnchorToActive(controllers.CurrentPath + '_id');
+	});
 </script>
 
 <div class="page-base">
@@ -33,6 +71,7 @@
 					class="anchor"
 					onclick={() => {
 						controllers.RouteTo(route.path);
+						_setAnchorToActive(route.id);
 					}}
 					id={route.id}
 					name={route.name}
@@ -43,9 +82,8 @@
 		</nav>
 	</header>
 	<div class="content-and-mobile-nav" id="content-page-dynamic">
-		<!-- svelte-ignore element_invalid_self_closing_tag -->
 		<div class="content">
-			<span class="nav-bar-spacer" id="desktop-only" />
+			<span class="nav-bar-spacer" id="desktop-only">spacer</span>
 			{@render children()}
 		</div>
 		<nav class="mobile-anchor-container" id="mobile-only">
@@ -56,6 +94,7 @@
 						onclick={() => {
 							route.handler();
 							_mobileNavHandler();
+							_setAnchorToActive(route.id + '_mobile');
 						}}
 						id={route.id + '_mobile'}
 						name={'Mobile ' + route.name}

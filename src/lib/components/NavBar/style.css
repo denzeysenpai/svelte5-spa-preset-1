@@ -5,6 +5,7 @@
 }
 
 .page-base {
+    overflow: hidden;
     .web-header {
         display: flex;
         position: fixed;
@@ -54,10 +55,13 @@
     .content-and-mobile-nav {
         display: flex;
         flex-direction: row;
-        overflow-x: hidden;
+        overflow: hidden;
+        width: fit-content;
         .nav-bar-spacer {
             display: block;
-            height: var(--nav-bar-height);
+            content: "";
+            position: relative;
+            line-height: var(--nav-bar-height);
             width: 100vw;
         }
 
@@ -66,8 +70,9 @@
             width: 100vw;
             display: flex;
             transition: var(--subtle-delay);
+            flex-direction: column;
         }
-
+        
         .mobile-anchor-container {
             background-color: var(--black);
             height: 100vh;
@@ -79,7 +84,7 @@
                 margin: auto;
                 display: flex;
                 flex-direction: column;
-
+                
                 .mobile-anchor {
                     width: 240px;
                     padding: 10px;
@@ -136,19 +141,17 @@
             box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.405);
             transition: var(--subtle-delay);
         }
-
-        
     }
     .content-and-mobile-nav.active {
         .content, .mobile-anchor-container {
             transform: translateX(-296px);
         }
         .mobile-nav-toggle {
-            transform: rotate(90deg);
+            transform: rotate(-90deg);
         }
     }
 }
-@media screen and (max-width: 3000px) {
+@media screen and (max-width: 5000px) {
     *>#desktop-only {
         display: flex;
     }

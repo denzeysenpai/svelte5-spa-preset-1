@@ -23,13 +23,13 @@
 	const _routes: PageComponent[] = [
 		Page('home', HomePage),
 		Page('about', AboutPage),
-		Page('contact-us', ContactPage)
+		Page('contact_us', ContactPage)
 	];
 
 	const _navBarRoutes = [
 		_navBarRoute('home_id', 'home', 'Home Button', 'Home'),
 		_navBarRoute('about_id', 'about', 'About Button', 'About'),
-		_navBarRoute('contact_us_id', 'contact-us', 'Contact Us Button', 'Contact Us')
+		_navBarRoute('contact_us_id', 'contact_us', 'Contact Us Button', 'Contact Us')
 	];
 
 	onMount(() => {});

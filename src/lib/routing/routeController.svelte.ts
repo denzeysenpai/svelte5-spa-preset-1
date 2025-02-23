@@ -44,6 +44,9 @@ const initialize = () => {
         },
         Reload() {
             _reloader()
+        },
+        get CurrentPath () {
+            return _currentRoute
         }
     }
 }
