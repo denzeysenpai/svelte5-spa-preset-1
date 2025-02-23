@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { controllers } from '$lib/routing/routeController.svelte';
+	import * as index from '$lib';
 	import './style.css';
 	let { routes } = $props();
 	let message = 'Add your message here!';
@@ -24,7 +26,13 @@
 		<div class="box">
 			<h3>Pages</h3>
 			{#each routes as route}
-				<button class="anchor-route">{route.text}</button>
+				<button
+					class="anchor-route"
+					onclick={() => {
+						controllers.RouteTo(route.path);
+						index._setAnchorToActive(route.id);
+					}}>{route.text}</button
+				>
 			{/each}
 		</div>
 		<div class="box">

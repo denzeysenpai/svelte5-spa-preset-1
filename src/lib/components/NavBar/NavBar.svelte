@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { controllers } from '$lib/routing/routeController.svelte';
 	import { onMount } from 'svelte';
-	import './style.css';
 	import * as index from '$lib';
+	import './style.css';
 
 	let { routes, children } = $props();
 	const initialize = () => {
