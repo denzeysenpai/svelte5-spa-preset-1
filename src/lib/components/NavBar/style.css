@@ -90,6 +90,8 @@
 			width: fit-content;
 			padding: 20px;
 			display: flex;
+			position: fixed;
+			left: 100vw;
 			.anchor-container {
 				margin: auto;
 				display: flex;

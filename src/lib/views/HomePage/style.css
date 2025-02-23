@@ -8,6 +8,8 @@
 }
 
 .main-page-content {
+	animation: fadeIn;
+	animation-duration: 0.8s;
 	.landing-page {
 		position: relative;
 		min-height: var(--landing-page-height);
@@ -112,6 +114,14 @@
 			object-fit: cover;
 			opacity: 0.3;
 		}
+	}
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
 	}
 }
 

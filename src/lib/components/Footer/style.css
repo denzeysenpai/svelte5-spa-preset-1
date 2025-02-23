@@ -8,10 +8,12 @@
     padding: 40px;
     padding-left: var(--gutter);
     padding-right: var(--gutter);
+
     .box-container {
         display: flex;
         flex-direction: row;
         width: calc(100% - (var(--gutter) * 2));
+
         .box {
             color: var(--yellow);
             position: relative;
@@ -28,6 +30,7 @@
                 font-size: 3rem;
                 max-width: 600px;
             }
+            
             .upper-box {
                 font-size: 2rem;
                 font-family: 'Albert Sans';

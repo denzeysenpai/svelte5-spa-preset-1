@@ -13,6 +13,10 @@
     --first-tick-responsive: 700px;
 }
 
+html, body {
+    background-color: var(--main-dark-color);
+}
+
 p {
     font-family: 'Albert Sans';
 }
