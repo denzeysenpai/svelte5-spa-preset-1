@@ -89,8 +89,7 @@
 				}
 
 				button:hover,
-				button:active
-                 {
+				button:active {
 					transition: var(--quick-delay);
 					color: var(--main-dark-color);
 					span {
@@ -216,16 +215,15 @@
 	}
 }
 
-
 @media screen and (max-width: 700px) {
 	.main-page-content {
 		.landing-page {
 			min-height: var(--landing-page-height-long);
 			width: 100vw;
-            flex-direction: column-reverse;
+			flex-direction: column-reverse;
 			.floating-box-foo {
 				margin: auto;
-                transform: scale(0.9);
+				transform: scale(0.9);
 				.floating-logo {
 					height: 300px;
 					width: 300px;
@@ -235,16 +233,16 @@
 					h1 {
 						font-size: 4rem;
 						line-height: 3.5rem;
-					    width: 300px;
+						width: 300px;
 						margin: 1px 0px;
-                        text-wrap: wrap;
+						text-wrap: wrap;
 					}
 					p {
 						font-size: 1.2rem;
 						font-weight: 700;
-                        text-wrap: wrap;
+						text-wrap: wrap;
 						padding: 8px;
-					    width: 300px;
+						width: 300px;
 					}
 				}
 				.lower {
@@ -266,12 +264,12 @@
 				}
 			}
 
-            #logo {
-                margin-bottom: 0px;
-            }
-            #actions {
-                margin-top: 10px;
-            }
+			#logo {
+				margin-bottom: 0px;
+			}
+			#actions {
+				margin-top: 10px;
+			}
 		}
 		.landing-page-bg {
 			position: absolute;
