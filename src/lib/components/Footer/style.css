@@ -83,7 +83,17 @@
 
             .anchor-route {
                 width: fit-content;
-
+                background-color: transparent;
+                border: none;
+                color: var(--yellow);
+                cursor: pointer;
+                font-family: 'Albert Sans';
+                border-bottom: 1px solid transparent;
+                padding: 2px 1px 2px 1px;
+                transition: var(--subtle-delay);
+            }
+            .anchor-route:hover {
+                border-bottom: 1px solid var(--yellow);
             }
         }
     }
