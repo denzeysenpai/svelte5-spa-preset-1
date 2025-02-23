@@ -39,4 +39,5 @@
 			<h3 class="highlight">{highlight}</h3>
 		</div>
 	</div>
+	<p id="tag">@denzeysenpai - 2025</p>
 </footer>
