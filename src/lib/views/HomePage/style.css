@@ -10,6 +10,7 @@
 .main-page-content {
 	animation: fadeIn;
 	animation-duration: 0.8s;
+
 	.landing-page {
 		position: relative;
 		min-height: var(--landing-page-height);
@@ -17,17 +18,20 @@
 		display: flex;
 		background-color: var(--main-dark-color);
 		overflow: hidden;
+
 		.floating-box-foo {
 			display: flex;
 			flex-direction: column;
 			z-index: 5;
 			margin: auto;
+
 			.floating-logo {
 				height: 300px;
 				width: 300px;
 				background-color: var(--yellow);
 				border-radius: 20px;
 			}
+
 			.upper {
 				display: flex;
 				flex-direction: column;
@@ -39,6 +43,7 @@
 					font-family: 'Albert Sans';
 					color: var(--yellow);
 				}
+
 				p {
 					font-size: 1rem;
 					font-weight: 700;
@@ -46,6 +51,7 @@
 					padding: 5px;
 				}
 			}
+
 			.lower {
 				display: flex;
 				flex-direction: row;
@@ -69,6 +75,7 @@
 					transition: var(--quick-delay);
 					position: relative;
 					overflow: hidden;
+
 					span {
 						position: absolute;
 						content: '';
@@ -84,6 +91,7 @@
 							z-index: 0;
 						}
 					}
+
 					p {
 						z-index: 5;
 						margin: auto;
@@ -94,15 +102,18 @@
 				button:active {
 					transition: var(--quick-delay);
 					color: var(--main-dark-color);
+
 					span {
 						width: 100%;
 					}
 				}
 			}
 		}
+
 		.floating-logo-element {
 			margin: auto;
 		}
+
 		.landing-page-bg {
 			user-select: none;
 			z-index: 3;
@@ -130,19 +141,23 @@
 		.landing-page {
 			min-height: var(--landing-page-height-min);
 			width: 100vw;
+
 			.floating-box-foo {
 				margin: auto;
+
 				.floating-logo {
 					height: 260px;
 					width: 260px;
 					border-radius: 18px;
 				}
+
 				.upper {
 					h1 {
 						font-size: 4rem;
 						line-height: 2rem;
 						margin: 5px 0px;
 					}
+					
 					p {
 						font-size: 1rem;
 						font-weight: 700;
@@ -180,19 +195,23 @@
 		.landing-page {
 			min-height: var(--landing-page-height-min);
 			width: 100vw;
+
 			.floating-box-foo {
 				margin: auto;
+
 				.floating-logo {
 					height: 220px;
 					width: 220px;
 					border-radius: 18px;
 				}
+
 				.upper {
 					h1 {
 						font-size: 3rem;
 						line-height: 1.5rem;
 						margin: 3px 0px;
 					}
+
 					p {
 						font-size: 0.9rem;
 						font-weight: 700;
@@ -231,14 +250,17 @@
 			min-height: var(--landing-page-height-long);
 			width: 100vw;
 			flex-direction: column-reverse;
+
 			.floating-box-foo {
 				margin: auto;
 				transform: scale(0.9);
+
 				.floating-logo {
 					height: 300px;
 					width: 300px;
 					border-radius: 18px;
 				}
+				
 				.upper {
 					h1 {
 						font-size: 4rem;
@@ -247,6 +269,7 @@
 						margin: 1px 0px;
 						text-wrap: wrap;
 					}
+
 					p {
 						font-size: 1.2rem;
 						font-weight: 700;
@@ -277,10 +300,12 @@
 			#logo {
 				margin-bottom: 0px;
 			}
+
 			#actions {
 				margin-top: 10px;
 			}
 		}
+
 		.landing-page-bg {
 			position: absolute;
 			min-height: var(--landing-page-height-long);
