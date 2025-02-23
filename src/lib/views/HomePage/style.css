@@ -5,9 +5,9 @@
 	--landing-page-height-min: 500px;
 	--landing-page-height-small: 420px;
 	--landing-page-height-long: 820px;
-	--logo-size-reg: 300px;
-	--logo-size-mid: 260px;
-	--logo-size-small: 220px;
+	--logo-size-regular: 300px;
+	--logo-size-midsize: 260px;
+	--logo-size-small-boi: 220px;
 }
 
 .main-page-content {
@@ -29,8 +29,8 @@
 			margin: auto;
 
 			.floating-logo {
-				height: var(--logo-size-reg);
-				width: var(--logo-size-reg);
+				height: var(--logo-size-regular);
+				width: var(--logo-size-regular);
 				background-color: var(--yellow);
 				border-radius: 20px;
 			}
@@ -149,8 +149,8 @@
 				margin: auto;
 
 				.floating-logo {
-					height: var(--logo-size-mid);
-					width: var(--logo-size-mid);
+					height: var(--logo-size-midsize);
+					width: var(--logo-size-midsize);
 					border-radius: 18px;
 				}
 
@@ -203,8 +203,8 @@
 				margin: auto;
 
 				.floating-logo {
-					height: var(--logo-size-small);
-					width: var(--logo-size-small);
+					height: var(--logo-size-small-boi);
+					width: var(--logo-size-small-boi);
 					border-radius: 18px;
 				}
 
@@ -259,8 +259,8 @@
 				transform: scale(0.9);
 
 				.floating-logo {
-					height: var(--logo-size-reg);
-					width:  var(--logo-size-reg);
+					height: var(--logo-size-regular);
+					width:  var(--logo-size-regular);
 					border-radius: 18px;
 				}
 				
