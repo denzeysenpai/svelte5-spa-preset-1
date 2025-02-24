@@ -12,7 +12,8 @@
 	padding: 30px;
 	padding-left: var(--gutter);
 	padding-right: var(--gutter);
-
+	animation: fadeIn;
+	animation-duration: 0.8s;
 	#tag {
 		color: var(--yellow);
 		font-size: var(--tag-size);
