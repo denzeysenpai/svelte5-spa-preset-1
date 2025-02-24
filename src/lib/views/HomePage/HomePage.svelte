@@ -34,6 +34,24 @@
 	<!-- LANDING PAGE SECTION -->
 
 	<!-- SUMMARY OF ABOUT US OR INTRODUCTION -->
+	<section class="summary">
+		<div class="content" style="flex-direction: row;">
+			<div class="left-box">
+				<!-- svelte-ignore a11y_img_redundant_alt -->
+				<img src="" alt="Object image here" class="summary-img" />
+				<span class="border" id="el1"></span>
+				<span class="border" id="el2"></span>
+			</div>
+			<div class="right-box">
+				<h1>Business summary here!</h1>
+				<p class="section-typography">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nemo doloremque, architecto
+					necessitatibus dignissimos, totam animi saepe enim accusamus modi cupiditate quisquam.
+					Atque, corporis nihil.
+				</p>
+			</div>
+		</div>
+	</section>
 	<!-- SUMMARY OF ABOUT US OR INTRODUCTION -->
 
 	<!-- VISUALS -->
