@@ -15,6 +15,10 @@ const anchors = [
 	}
 ];
 
+/**
+ * Sets the button state to active
+ * @param id ID to set to active
+ */
 export function _setAnchorToActive(id: string) {
 	anchors.forEach((anchor) => {
 		if (id == anchor.desktop || id == anchor.mobile) {

@@ -9,6 +9,13 @@
 	import Footer from '$lib/components/Footer/Footer.svelte';
 	let reloader = $state(false);
 
+	/**
+	 * Returns an object of a page component
+	 * @param _id ID of the routing button
+	 * @param _path Path to route to
+	 * @param _name Name of the route
+	 * @param _text Display text of the button
+	 */
 	const _navBarRoute = (_id: string, _path: string, _name: string, _text: string) => {
 		return {
 			id: _id,
