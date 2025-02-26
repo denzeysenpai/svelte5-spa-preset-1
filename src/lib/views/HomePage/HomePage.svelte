@@ -55,6 +55,7 @@
 	<!-- SUMMARY OF ABOUT US OR INTRODUCTION -->
 
 	<!-- VISUALS -->
+	<section class="visuals"></section>
 	<!-- VISUALS -->
 
 	<!-- CALL TO ACTION -->
