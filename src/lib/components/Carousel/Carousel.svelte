@@ -28,6 +28,16 @@
 			text: ''
 		}
 	];
+
+	/**
+	 * Carousel states:
+	 * no hover = auto scroll
+	 * hover = pause scrolling
+	 * controlled = pause scrolling
+	 *
+	 * pause scrolling time = 3s
+	 * scrolling interval = 3s
+	 */
 </script>
 
 <div class="carousel-container">
