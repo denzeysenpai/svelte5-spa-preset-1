@@ -53,10 +53,12 @@
 		</nav>
 	</header>
 	<div class="content-and-mobile-nav" id="content-page-dynamic">
+		<!-- = -->
 		<div class="content">
 			<span class="nav-bar-spacer" id="desktop-only">spacer</span>
 			{@render children()}
 		</div>
+		<!-- = -->
 		<nav class="mobile-anchor-container" id="mobile-only">
 			<div class="anchor-container">
 				{#each routes as route}
