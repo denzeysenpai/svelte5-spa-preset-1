@@ -35,6 +35,7 @@
 				<img id="logo" src="" alt="Business Logo" />
 			</div>
 		</div>
+		<!-- = -->
 		<nav class="anchor-container">
 			{#each routes as route}
 				<button
