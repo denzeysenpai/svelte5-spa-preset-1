@@ -15,6 +15,9 @@ const initialize = () => {
     let _pageSuffix : string = btoa("suffix")
     let _reloader : ()=>void = $state(()=>{})
     return {
+        /**Navigates to the page selected
+         * @param path Route path of the page
+         */
         RouteTo(path : string){
             if (_routes.has(path)) {
                 _currentRoute = path
@@ -23,6 +26,11 @@ const initialize = () => {
                 this.Reload()
             }
         },
+        /**
+         * Initializes the path and components as a route
+         * @param routes Contains the routes available
+         * @param reloader Used for refreshing reactive content
+         */
         InitializeRoutes(routes : PageComponent[], reloader : ()=>void) {
             if (_routes.size == 0) {
                 _mainRoute = routes[0].path
@@ -32,6 +40,9 @@ const initialize = () => {
             }
             _reloader = reloader
         },
+        /**
+         * Fetches the route from the URL
+         */
         FetchRouteFromUrl() {
             let href : string= location.href
             if(href.includes(_pagePreffix)){
@@ -42,6 +53,9 @@ const initialize = () => {
         get CurrentRoute () {
             return _routes.get(_currentRoute)
         },
+        /**
+         * Triggers the loaded reloader function
+         */
         Reload() {
             _reloader()
         },

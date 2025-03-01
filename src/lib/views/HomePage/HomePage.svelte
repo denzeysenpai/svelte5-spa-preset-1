@@ -56,6 +56,7 @@
 
 
 	<!-- VISUALS -->
+	<section class="visuals"></section>
 	<!-- VISUALS -->
 
 
