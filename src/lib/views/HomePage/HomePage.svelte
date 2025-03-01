@@ -9,10 +9,12 @@
 	<!-- LANDING PAGE SECTION -->
 	<section class="landing-page">
 		<div class="floating-box-foo" id="actions">
+			<!-- = -->
 			<div class="upper">
 				<h1>{businessName}</h1>
 				<p>{businessShortMessage}</p>
 			</div>
+			<!-- = -->
 			<div class="lower">
 				<button id="action-1">
 					<p>Action 1</p>
