@@ -26,9 +26,11 @@
 				</button>
 			</div>
 		</div>
+		<!-- = -->
 		<div class="floating-box-foo" id="logo">
 			<img src="" alt="logo element here" class="floating-logo" />
 		</div>
+		<!-- = -->
 		<img src={Assets.LandingPageBG} alt="" srcset="" class="landing-page-bg" />
 	</section>
 	<!-- LANDING PAGE SECTION -->
@@ -54,11 +56,8 @@
 	</section>
 	<!-- SUMMARY OF ABOUT US OR INTRODUCTION -->
 
-
 	<!-- VISUALS -->
-	<section class="visuals"></section>
 	<!-- VISUALS -->
-
 
 	<!-- CALL TO ACTION -->
 	<!-- CALL TO ACTION -->
