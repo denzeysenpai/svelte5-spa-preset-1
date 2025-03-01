@@ -65,6 +65,7 @@
 		</div>
 		<!-- = -->
 		<nav class="mobile-anchor-container" id="mobile-only">
+			<!-- = -->
 			<div class="anchor-container">
 				{#each routes as route}
 					<button
@@ -81,6 +82,7 @@
 					</button>
 				{/each}
 			</div>
+			<!-- = -->
 		</nav>
 		<!-- svelte-ignore a11y_consider_explicit_label -->
 		<button class="mobile-nav-toggle" onclick={_mobileNavHandler} id="mobile-only">
