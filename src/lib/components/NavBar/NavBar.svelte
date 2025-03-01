@@ -29,11 +29,14 @@
 
 <div class="page-base">
 	<header class="web-header" id="desktop-only">
+		<!-- = -->
 		<div class="logo-container">
+			<!-- = -->
 			<div class="logo-sect">
 				<p>Business Name</p>
 				<img id="logo" src="" alt="Business Logo" />
 			</div>
+			<!-- = -->
 		</div>
 		<!-- = -->
 		<nav class="anchor-container">
