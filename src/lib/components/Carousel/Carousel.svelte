@@ -41,12 +41,16 @@
 </script>
 
 <div class="carousel-container">
+	<!-- = -->
 	<div class="view-frame">
+		<!-- = -->
 		{#each initializedFrames as frame}
 			<div class={'frame ' + frame.position} id={frame.position}>
 				<img src={frame.img} alt={frame.text} />
 				<h3>{frame.text}</h3>
 			</div>
 		{/each}
+		<!-- = -->
 	</div>
+	<!-- = -->
 </div>
