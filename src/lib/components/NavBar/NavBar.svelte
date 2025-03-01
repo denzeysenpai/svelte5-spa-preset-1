@@ -40,6 +40,7 @@
 		</div>
 		<!-- = -->
 		<nav class="anchor-container">
+			<!-- = -->
 			{#each routes as route}
 				<button
 					class="anchor"
@@ -53,6 +54,7 @@
 					{route.text}
 				</button>
 			{/each}
+			<!-- = -->
 		</nav>
 	</header>
 	<div class="content-and-mobile-nav" id="content-page-dynamic">
