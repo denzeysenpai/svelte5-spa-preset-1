@@ -3,8 +3,8 @@
 </script>
 
 <main class="about-content">
-	<div class="content">
-		<h1 class="page-title">Title here!</h1>
+	<div class="content-foo">
+		<h1 class="page-title">Your about page here!</h1>
 		<p class="paragraph">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nisi laborum animi
 			accusamus molestiae consequuntur porro dolor, nulla, aperiam nihil iusto id numquam ratione.

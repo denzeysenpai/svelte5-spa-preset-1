@@ -1,8 +1,6 @@
 @import '../../global.css';
 
 .page-comp {
-	animation-name: fadeIn;
-	animation-duration: 2s;
 	height: calc(100vh - var(--nav-bar-height));
 	width: 100vw;
 	display: flex;
