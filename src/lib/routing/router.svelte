@@ -17,9 +17,7 @@
 	$effect(() => {
 		reload = reload;
 		loadIn = false;
-		setTimeout(() => {
-			loadIn = true;
-		}, 0);
+		loadIn = true;
 	});
 </script>
 

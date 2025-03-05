@@ -1,1 +1,19 @@
 @import "../../../global.css";
+
+.about-content {
+    height: fit-content;
+    width: 100vw;
+    padding: var(--gutter);
+    display: flex;
+    
+    .content {
+        margin: auto;
+        height: fit-content;
+        width: 700px;
+        display: flex;
+        
+        .paragraph {
+            text-wrap: wrap;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 {
 	"name": "svelte5-spa-template",
 	"private": true,
-	"version": "0.0.1",
+	"version": "0.3.6",
 	"type": "module",
 	"license": "MIT",
 	"author": {
