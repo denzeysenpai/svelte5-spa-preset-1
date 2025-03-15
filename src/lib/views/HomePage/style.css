@@ -8,8 +8,8 @@
 	--logo-size-regular: 300px;
 	--logo-size-midsize: 260px;
 	--logo-size-small-boi: 220px;
-	--summary-img-height: 600px;
-	--summary-img-width: 500px;
+	--summary-img-height: 400px;
+	--summary-img-width: 650px;
 	--summary-img-radius: 18px;
 }
 
@@ -151,6 +151,7 @@
 			display: flex;
 			flex-direction: row;
 			width: 1000px;
+			padding: 80px 0px;
 			position: relative;
 
 			.right-box,
@@ -169,9 +170,11 @@
 			}
 
 			.left-box {
-				.summary-img {
-					height: var(--summary-img-height);
+				.summary-img, #el1, #el2 {
 					width: var(--summary-img-width);
+					height: var(--summary-img-height);
+				}
+				.summary-img {
 					background-color: var(--yellow);
 					border: 5px solid var(--yellow);
 					border-radius: var(--summary-img-radius);
@@ -194,6 +197,10 @@
 					transform: translateX(50px) translateY(30px);
 				}
 			}
+		}
+		.content:nth-child(even) {
+			display: flex;
+			flex-direction: row-reverse;
 		}
 	}
 }
