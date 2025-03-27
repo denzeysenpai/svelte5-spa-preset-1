@@ -1,6 +1,6 @@
 # Svelte5-SPA-Preset-1
 
-A **Svelte 5 template** with a built-in **SPA router** and a **responsive header/navbar**. This preset is designed to help developers who face **routing issues when deploying Svelte apps on IIS**.
+A **Svelte 5 template** with a built-in **SPA router** and a **responsive header/navbar as a bonus** ( you can remove it if you want ). This preset is designed to help developers who face **routing issues when deploying Svelte apps on IIS**.
 
 ## 🚀 Why Use This Template?
 When deploying a normal **SvelteKit** project that uses the standard svelte filesystem-based routing on **IIS**, routing often breaks because IIS does not handle client-side routing properly. This template provides a simple **SPA (Single Page Application) routing solution**, ensuring smooth navigation without server-side configuration headaches.
