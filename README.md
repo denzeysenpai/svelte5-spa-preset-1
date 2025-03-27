@@ -29,10 +29,6 @@ npm run dev
    ```
 2. Copy the `build/` folder to your IIS site directory
 
-## 🔗 Resources
-- [Svelte](https://svelte.dev/)
-- [Svelte SPA Router](https://github.com/ItalyPaleAle/svelte-spa-router)
-- [IIS Rewrite Module](https://docs.microsoft.com/en-us/iis/extensions/url-rewrite-module/using-the-url-rewrite-module)
 
 ## 📜 License
 MIT License. Feel free to use and modify!
