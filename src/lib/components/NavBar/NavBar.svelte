@@ -29,13 +29,18 @@
 
 <div class="page-base">
 	<header class="web-header" id="desktop-only">
+		<!-- = -->
 		<div class="logo-container">
+			<!-- = -->
 			<div class="logo-sect">
 				<p>Business Name</p>
 				<img id="logo" src="" alt="Business Logo" />
 			</div>
+			<!-- = -->
 		</div>
+		<!-- = -->
 		<nav class="anchor-container">
+			<!-- = -->
 			{#each routes as route}
 				<button
 					class="anchor"
@@ -49,14 +54,18 @@
 					{route.text}
 				</button>
 			{/each}
+			<!-- = -->
 		</nav>
 	</header>
 	<div class="content-and-mobile-nav" id="content-page-dynamic">
+		<!-- = -->
 		<div class="content">
 			<span class="nav-bar-spacer" id="desktop-only">spacer</span>
 			{@render children()}
 		</div>
+		<!-- = -->
 		<nav class="mobile-anchor-container" id="mobile-only">
+			<!-- = -->
 			<div class="anchor-container">
 				{#each routes as route}
 					<button
@@ -73,6 +82,7 @@
 					</button>
 				{/each}
 			</div>
+			<!-- = -->
 		</nav>
 		<!-- svelte-ignore a11y_consider_explicit_label -->
 		<button class="mobile-nav-toggle" onclick={_mobileNavHandler} id="mobile-only">

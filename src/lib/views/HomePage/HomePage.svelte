@@ -9,10 +9,12 @@
 	<!-- LANDING PAGE SECTION -->
 	<section class="landing-page">
 		<div class="floating-box-foo" id="actions">
+			<!-- = -->
 			<div class="upper">
 				<h1>{businessName}</h1>
 				<p>{businessShortMessage}</p>
 			</div>
+			<!-- = -->
 			<div class="lower">
 				<button id="action-1">
 					<p>Action 1</p>
@@ -26,9 +28,11 @@
 				</button>
 			</div>
 		</div>
+		<!-- = -->
 		<div class="floating-box-foo" id="logo">
 			<img src="" alt="logo element here" class="floating-logo" />
 		</div>
+		<!-- = -->
 		<img src={Assets.LandingPageBG} alt="" srcset="" class="landing-page-bg" />
 	</section>
 	<!-- LANDING PAGE SECTION -->
@@ -51,11 +55,42 @@
 				</p>
 			</div>
 		</div>
+		<div class="content" style="flex-direction: row;">
+			<div class="left-box">
+				<!-- svelte-ignore a11y_img_redundant_alt -->
+				<img src="" alt="Object image here" class="summary-img" />
+				<span class="border" id="el1"></span>
+				<span class="border" id="el2"></span>
+			</div>
+			<div class="right-box">
+				<h1>Business summary here!</h1>
+				<p class="section-typography">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nemo doloremque, architecto
+					necessitatibus dignissimos, totam animi saepe enim accusamus modi cupiditate quisquam.
+					Atque, corporis nihil.
+				</p>
+			</div>
+		</div>
+		<div class="content" style="flex-direction: row;">
+			<div class="left-box">
+				<!-- svelte-ignore a11y_img_redundant_alt -->
+				<img src="" alt="Object image here" class="summary-img" />
+				<span class="border" id="el1"></span>
+				<span class="border" id="el2"></span>
+			</div>
+			<div class="right-box">
+				<h1>Business summary here!</h1>
+				<p class="section-typography">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nemo doloremque, architecto
+					necessitatibus dignissimos, totam animi saepe enim accusamus modi cupiditate quisquam.
+					Atque, corporis nihil.
+				</p>
+			</div>
+		</div>
 	</section>
 	<!-- SUMMARY OF ABOUT US OR INTRODUCTION -->
 
 	<!-- VISUALS -->
-	<section class="visuals"></section>
 	<!-- VISUALS -->
 
 	<!-- CALL TO ACTION -->

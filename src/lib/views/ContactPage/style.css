@@ -1,1 +1,289 @@
-@import "../../../global.css";
+@import '../../../global.css';
+
+.contacts-page {
+	padding: var(--gutter);
+	display: flex;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	flex-direction: row;
+	width: auto;
+	* {
+		font-family: var(--main-font);
+		color: var(--yellow);
+		width: fit-content;
+	}
+
+	.content {
+		margin: 0;
+		width: auto;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		h1 {
+			text-align: center;
+			font-size: 4rem;
+			width: fit-content;
+			padding: var(--gutter);
+			display: flex;
+			margin: auto;
+		}
+
+		.grid {
+			display: flex;
+			gap: 1rem;
+			margin: auto;
+			width: auto;
+			height: auto;
+			border: 2px solid var(--yellow);
+			justify-content: space-between;
+			border-radius: 20px;
+			overflow: hidden;
+
+			.box {
+				padding: var(--gutter);
+				width: 100%;
+				margin: 0;
+				height: auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				.row {
+					display: flex;
+					flex-direction: row;
+					width: 100%;
+					margin: 10px;
+					.cell {
+						display: flex;
+						flex-direction: column;
+						width: 100%;
+						padding: 0px 6px;
+						margin: 3px;
+
+                        label {
+                            font-size: 0.78rem;
+                            padding: 4px;
+                        }
+
+						input,
+						textarea,
+						button {
+							width: auto;
+							padding: 10px;
+							background-color: var(--main-dark-color);
+							border: 1px solid var(--yellow);
+							font-size: 1rem;
+							border-radius: 5px;
+						}
+						textarea {
+							min-height: 160px;
+							resize: none;
+							width: auto;
+							right: 0;
+						}
+						button {
+							width: auto;
+							display: flex;
+							flex-grow: 1;
+							justify-content: center;
+							padding: 15px;
+							font-family: var(--main-font);
+							font-size: 1rem;
+							font-weight: 800;
+							background-color: transparent;
+							color: var(--yellow);
+							cursor: pointer;
+							transition: var(--quick-delay);
+							position: relative;
+							overflow: hidden;
+
+							span {
+								position: absolute;
+								content: '';
+								display: block;
+								width: 0%;
+								height: 100%;
+								inset: 0;
+								transform: scale(1.5);
+								transition: var(--normal-delay);
+
+								&#bg {
+									background-color: var(--yellow);
+									z-index: 0;
+								}
+							}
+
+							p {
+								z-index: 5;
+								margin: auto;
+							}
+						}
+
+						button:hover,
+						button:active {
+							transition: var(--quick-delay);
+                            p  {
+                                color: var(--main-dark-color);
+                            }
+
+							span {
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+			.box:nth-child(1) {
+				background-color: var(--yellow);
+				* {
+					color: var(--main-dark-color);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1360px) {
+    .contacts-page {
+	padding: var(--gutter);
+	display: flex;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	flex-direction: row;
+	width: auto;
+	* {
+		font-family: var(--main-font);
+		color: var(--yellow);
+		width: fit-content;
+	}
+
+	.content {
+		margin: 0;
+		width: auto;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		h1 {
+			text-align: center;
+			font-size: 4rem;
+			width: fit-content;
+			padding: var(--gutter);
+			display: flex;
+			margin: auto;
+		}
+
+		.grid {
+			display: flex;
+			gap: 1rem;
+			margin: auto;
+			width: auto;
+			height: auto;
+            flex-direction: column;
+			border: 2px solid var(--yellow);
+			justify-content: space-between;
+			border-radius: 20px;
+			overflow: hidden;
+
+			.box {
+				padding: var(--gutter);
+				width: auto;
+				margin: 0;
+				height: auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				.row {
+					display: flex;
+					flex-direction: row;
+					width: 100%;
+					margin: 10px;
+					.cell {
+						display: flex;
+						flex-direction: column;
+						width: 100%;
+						padding: 0px 6px;
+						margin: 3px;
+
+                        label {
+                            font-size: 0.78rem;
+                            padding: 4px;
+                        }
+
+						input,
+						textarea,
+						button {
+							width: auto;
+							padding: 10px;
+							background-color: var(--main-dark-color);
+							border: 1px solid var(--yellow);
+							font-size: 1rem;
+							border-radius: 5px;
+						}
+						textarea {
+							min-height: 160px;
+							resize: none;
+							width: auto;
+							right: 0;
+						}
+						button {
+							width: auto;
+							display: flex;
+							flex-grow: 1;
+							justify-content: center;
+							padding: 15px;
+							font-family: var(--main-font);
+							font-size: 1rem;
+							font-weight: 800;
+							background-color: transparent;
+							color: var(--yellow);
+							cursor: pointer;
+							transition: var(--quick-delay);
+							position: relative;
+							overflow: hidden;
+
+							span {
+								position: absolute;
+								content: '';
+								display: block;
+								width: 0%;
+								height: 100%;
+								inset: 0;
+								transform: scale(1.5);
+								transition: var(--normal-delay);
+
+								&#bg {
+									background-color: var(--yellow);
+									z-index: 0;
+								}
+							}
+
+							p {
+								z-index: 5;
+								margin: auto;
+							}
+						}
+
+						button:hover,
+						button:active {
+							transition: var(--quick-delay);
+                            p  {
+                                color: var(--main-dark-color);
+                            }
+
+							span {
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+			.box:nth-child(1) {
+				background-color: var(--yellow);
+				* {
+					color: var(--main-dark-color);
+				}
+			}
+		}
+	}
+}
+
+}
