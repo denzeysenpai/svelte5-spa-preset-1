@@ -19,6 +19,10 @@
 		loadIn = false;
 		loadIn = true;
 	});
+
+	/**
+	 * Code in this file should not be edited to avoid breaking
+	 */
 </script>
 
 {#if loadIn}

@@ -41,7 +41,8 @@ const initialize = () => {
             _reloader = reloader
         },
         /**
-         * Fetches the route from the URL
+         * Fetches the route from the URL, if there is no specified route, then it will 
+         * navigate to the home page (The first initialized page will always be the home/default page)
          */
         FetchRouteFromUrl() {
             let href : string= location.href
@@ -54,7 +55,7 @@ const initialize = () => {
             return _routes.get(_currentRoute)
         },
         /**
-         * Triggers the loaded reloader function
+         * Triggers the loaded reloader function which then reloads the components in the DOM
          */
         Reload() {
             _reloader()
@@ -64,6 +65,12 @@ const initialize = () => {
         }
     }
 }
+/**
+ * For building a new PageComponent object
+ * @param path Route path
+ * @param component Page component
+ * @returns PageComponent object
+ */
 export function Page(path: string, component: any) : PageComponent{
     return {
         path: path,

@@ -56,12 +56,6 @@
 			</div>
 		</div>
 		<div class="content" style="flex-direction: row;">
-			<div class="left-box">
-				<!-- svelte-ignore a11y_img_redundant_alt -->
-				<img src="" alt="Object image here" class="summary-img" />
-				<span class="border" id="el1"></span>
-				<span class="border" id="el2"></span>
-			</div>
 			<div class="right-box">
 				<h1>Business summary here!</h1>
 				<p class="section-typography">
@@ -69,6 +63,12 @@
 					necessitatibus dignissimos, totam animi saepe enim accusamus modi cupiditate quisquam.
 					Atque, corporis nihil.
 				</p>
+			</div>
+			<div class="left-box">
+				<!-- svelte-ignore a11y_img_redundant_alt -->
+				<img src="" alt="Object image here" class="summary-img" />
+				<span class="border" id="el1"></span>
+				<span class="border" id="el2"></span>
 			</div>
 		</div>
 		<div class="content" style="flex-direction: row;">
