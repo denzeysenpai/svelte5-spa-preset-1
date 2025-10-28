@@ -1,15 +1,43 @@
 <script lang="ts">
-	import Router from '$lib/spa-router/Router.svelte';
-	import Route from '$lib/spa-router/Route.svelte';
-	import HomePage from '$lib/views/HomePage/HomePage.svelte';
-	import AboutPage from '$lib/views/AboutPage/AboutPage.svelte';
-	import { Navigate } from '$lib/spa-router/exports.svelte';
+	import { page } from '$app/state';
+	import { RouteTo, VIEW_PREFIX, type RouteObject } from '.';
+	import { Routes } from './routes.svelte';
+
+	let lastPath = $state('');
+	let component = $state<__sveltets_2_IsomorphicComponent | undefined>(undefined);
+
+	$effect(() => {
+		const currentPage = page.url.searchParams.get('view') ?? '';
+		const currentChild = page.url.searchParams.get('sub') ?? '';
+
+		if (!currentChild && !currentPage) {
+			const firstRoute = Routes[0];
+			if (firstRoute) RouteTo(firstRoute.path);
+			return;
+		}
+
+		if (lastPath !== currentPage || lastPath !== currentChild) {
+			lastPath = currentPage || currentChild;
+			component = undefined;
+
+			const walk = (obj: RouteObject) => {
+				if (obj.path === currentPage || obj.path === currentChild) {
+					if (obj.children && currentChild && obj.path !== currentChild) {
+						obj.children.forEach(walk);
+					} else {
+						component = obj.component;
+					}
+				}
+			};
+
+			Routes.forEach(walk);
+		}
+	});
 </script>
 
-<button onclick={() => Navigate('home')}>Home</button>
-<button onclick={() => Navigate('about')}>About</button>
-
-<Router>
-	<Route path="home" component={HomePage} />
-	<Route path="about" component={AboutPage} />
-</Router>
+{#if component}
+	<!-- svelte-ignore svelte_component_deprecated -->
+	<svelte:component this={component} />
+{:else}
+	<p>Page not found</p>
+{/if}
