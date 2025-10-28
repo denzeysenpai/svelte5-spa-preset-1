@@ -1,33 +1,66 @@
 :root {
-    --main-dark-color: #25292a;
-    --orange: #e17055;
-    --yellow: #fdcb6e;
-    --gray: #dfe6e9;
-    --off-white: #f5f4eb;
-    --gutter: 4rem;
-    --quick-delay: all 0.12s ease;
-    --subtle-delay: all 0.2s ease;
-    --normal-delay: all 0.5s ease;
-    --long-delay: all 1s ease;
-    --nav-bar-height: 60px;
-    --first-tick-responsive: 700px;
-    --main-font: 'Albert Sans';
+	/* box shadows or text shadows */
+	--box-shadow-light: 2px 2px 3px rgba(27, 27, 27, 0.404);
+	--box-shadow-dark: 2px 2px 3px rgba(26, 26, 26, 0.694);
+	--box-shadow-no-light: 0px 0px 3px rgba(27, 27, 27, 0.404);
+	--box-shadow-no-dark: 0px 0px 3px rgba(26, 26, 26, 0.694);
+	/* transition delays */
+	--delay-sm: all 0.15s ease;
+	--delay-m: all 0.25s ease;
+	--delay-l: all 0.4s ease;
+	/* specifics */
+	--gutter: 1.5rem; /* page gutter */
+	--round-sm: 0.7rem; /* border-radius */
+	--round-m: 0.85rem; /* border-radius */
+	--round-l: 1.15px; /* border-radius */
+	/* others */
 }
 
-html, body {
-    background-color: var(--main-dark-color);
+button:disabled {
+	cursor: not-allowed;
+	filter: brightness(0.8);
+	box-shadow: none;
 }
 
-p {
-    font-family: var(--main-font);
-    font-size: 1rem;
+input:focus,
+button:focus {
+	outline: none;
 }
 
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
+input,
+button,
+a {
+	-webkit-tap-highlight-color: transparent;
+}
+
+html {
+	padding: 0px;
+	margin: 0px;
+	height: 100dvh;
+	width: 100dvw;
+	display: flex;
+
+	body {
+		margin: 0;
 	}
-	100% {
-		opacity: 1;
+}
+
+@media screen and (max-width: 1080px) {
+	html > body {
+	}
+}
+
+@media screen and (max-width: 800px) {
+	html > body {
+	}
+}
+
+@media screen and (max-width: 500px) {
+	html > body {
+	}
+}
+
+@media screen and (max-width: 300px) {
+	html > body {
 	}
 }
