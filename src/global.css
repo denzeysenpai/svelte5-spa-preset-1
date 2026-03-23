@@ -1,19 +1,37 @@
 :root {
+	/* Cheese Theme Colors */
+	--cheese-cream: #FFF8DC;
+	--cheese-light: #FFE4B5;
+	--cheese-gold: #FFD700;
+	--cheese-orange: #FFA500;
+	--cheese-dark: #FF8C00;
+	--cheese-brown: #8B4513;
+	--cheese-chocolate: #D2691E;
+	--cheese-deep: #F4D03F;
+	--cheese-bg: #2C2416;
+	--cheese-surface: #3D3221;
+
 	/* box shadows or text shadows */
-	--box-shadow-light: 2px 2px 3px rgba(27, 27, 27, 0.404);
-	--box-shadow-dark: 2px 2px 3px rgba(26, 26, 26, 0.694);
-	--box-shadow-no-light: 0px 0px 3px rgba(27, 27, 27, 0.404);
-	--box-shadow-no-dark: 0px 0px 3px rgba(26, 26, 26, 0.694);
+	--box-shadow-light: 2px 2px 3px rgba(139, 69, 19, 0.3);
+	--box-shadow-dark: 2px 2px 3px rgba(139, 69, 19, 0.5);
+	--box-shadow-no-light: 0px 0px 3px rgba(139, 69, 19, 0.3);
+	--box-shadow-no-dark: 0px 0px 3px rgba(139, 69, 19, 0.5);
 	/* transition delays */
 	--delay-sm: all 0.15s ease;
 	--delay-m: all 0.25s ease;
 	--delay-l: all 0.4s ease;
 	/* specifics */
-	--gutter: 1.5rem; /* page gutter */
-	--round-sm: 0.7rem; /* border-radius */
-	--round-m: 0.85rem; /* border-radius */
-	--round-l: 1.15px; /* border-radius */
-	/* others */
+	--gutter: 1.5rem;
+	--round-sm: 0.7rem;
+	--round-m: 0.85rem;
+	--round-l: 1.15rem;
+}
+
+body {
+	background: linear-gradient(135deg, var(--cheese-bg) 0%, #1a1510 100%);
+	color: var(--cheese-cream);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	min-height: 100vh;
 }
 
 button:disabled {
@@ -42,6 +60,7 @@ html {
 
 	body {
 		margin: 0;
+		background: linear-gradient(135deg, #2C2416 0%, #1a1510 100%);
 	}
 }
 
