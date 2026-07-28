@@ -1,43 +1,61 @@
 <script lang="ts">
-	import { page } from '$app/state';
-	import { RouteTo, VIEW_PREFIX, type RouteObject } from '.';
-	import { Routes } from './routes.svelte';
-
-	let lastPath = $state('');
-	let component = $state<__sveltets_2_IsomorphicComponent | undefined>(undefined);
-
-	$effect(() => {
-		const currentPage = page.url.searchParams.get('view') ?? '';
-		const currentChild = page.url.searchParams.get('sub') ?? '';
-
-		if (!currentChild && !currentPage) {
-			const firstRoute = Routes[0];
-			if (firstRoute) RouteTo(firstRoute.path);
-			return;
-		}
-
-		if (lastPath !== currentPage || lastPath !== currentChild) {
-			lastPath = currentPage || currentChild;
-			component = undefined;
-
-			const walk = (obj: RouteObject) => {
-				if (obj.path === currentPage || obj.path === currentChild) {
-					if (obj.children && currentChild && obj.path !== currentChild) {
-						obj.children.forEach(walk);
-					} else {
-						component = obj.component;
-					}
-				}
-			};
-
-			Routes.forEach(walk);
-		}
-	});
+	import Router from '$lib/router/Router.svelte';
+	import RouteLink from '$lib/router/RouteLink.svelte';
 </script>
 
-{#if component}
-	<!-- svelte-ignore svelte_component_deprecated -->
-	<svelte:component this={component} />
-{:else}
-	<p>Page not found</p>
-{/if}
+<div class="app-container">
+	<nav class="nav-bar">
+		<RouteLink to="home-page" class="nav-link">Home</RouteLink>
+		<RouteLink to="about-page" class="nav-link">About</RouteLink>
+	</nav>
+
+	<main class="content">
+		<Router />
+	</main>
+</div>
+
+<style>
+	:global(body) {
+		margin: 0;
+		font-family: system-ui, -apple-system, sans-serif;
+	}
+
+	.app-container {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+
+	.nav-bar {
+		display: flex;
+		gap: 1rem;
+		padding: 1rem 2rem;
+		background-color: #f8fafc;
+		border-bottom: 1px solid #e2e8f0;
+	}
+
+	:global(.nav-link) {
+		text-decoration: none;
+		color: #475569;
+		font-weight: 500;
+		padding: 0.5rem 0.75rem;
+		border-radius: 0.375rem;
+		transition: all 0.2s;
+	}
+
+	:global(.nav-link:hover) {
+		color: #0f172a;
+		background-color: #e2e8f0;
+	}
+
+	:global(.nav-link.active) {
+		color: #2563eb;
+		background-color: #dbeafe;
+		font-weight: 600;
+	}
+
+	.content {
+		flex: 1;
+		padding: 2rem;
+	}
+</style>
